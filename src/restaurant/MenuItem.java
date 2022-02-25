@@ -19,6 +19,11 @@ public class MenuItem {
         this(name, price, description, category, true);
     }
 
+    public String toString() {
+        return "\nName: " + name + "\nPrice: " + price + "\nDescription: " + description
+                + "\nCategory: " + category + "\nNew: " + isNew + "\n";
+    }
+
     public String getName() {
         return name;
     }

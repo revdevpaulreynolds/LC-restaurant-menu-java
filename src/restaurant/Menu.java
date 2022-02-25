@@ -26,4 +26,27 @@ public class Menu {
     public void setLastUpdated(Date aLastUpdated) {
         lastUpdated = aLastUpdated;
     }
+
+    public String toString() {
+        StringBuilder menu = new StringBuilder();
+        for (MenuItem selection : selections) {
+            String s = "\nName: " + selection.getName() + "\nPrice: "
+                    + selection.getPrice() + "\nDescription: " + selection.getDescription()
+                    + "\nCategory: " + selection.getCategory() + "\nNew: " + selection.getIsNew() + "\n";
+
+            menu.append(s);
+        }
+        return menu.toString();
+    }
+
+    public void deleteSelection(MenuItem name) {
+        if (!selections.contains(name)) {
+            System.out.println("Selection not found");
+//            return "Selection not found";
+        }
+//        int index = selections.indexOf(name);
+        selections.remove(name);
+        System.out.print(selections);
+//        return selections.toString();
+    }
 }
