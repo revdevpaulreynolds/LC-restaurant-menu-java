@@ -18,5 +18,6 @@ public class Restaurant {
         redRobin.addSelection(iceCream);
 
         redRobin.deleteSelection(burger);
+        System.out.print(redRobin);
     }
 }

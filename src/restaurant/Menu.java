@@ -46,7 +46,6 @@ public class Menu {
         }
 //        int index = selections.indexOf(name);
         selections.remove(name);
-        System.out.print(selections);
 //        return selections.toString();
     }
 }
